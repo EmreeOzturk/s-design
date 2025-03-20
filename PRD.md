@@ -12,6 +12,8 @@ Create an all-in-one solution for crypto traders that combines powerful automate
 - **Technical Traders**: Users with trading experience who want to automate their strategies
 - **Data-Driven Investors**: Users who rely on technical analysis and backtesting
 - **Passive Investors**: Users who want to set up automated strategies with minimal intervention
+- **Algorithmic Traders**: Users with programming experience who want to create and implement custom trading strategies
+- **Institutional Investors**: Professional entities requiring advanced reporting, compliance features, and higher trade volumes
 
 ### 3.2 User Journeys
 - Setup journey: User onboarding → Exchange API configuration → Strategy selection → Live monitoring
@@ -27,11 +29,17 @@ Create an all-in-one solution for crypto traders that combines powerful automate
 - Order execution and management
 
 ### 4.2 Trading Bot
-- Implementation of 10+ popular trading strategies via npm packages
+- Implementation of 15+ popular trading strategies via npm packages
 - Customizable parameters for each strategy
 - Real-time signal generation
 - Automated trade execution
 - Manual override capabilities
+- Grid Trading implementation for range-bound markets
+- Dollar-Cost Averaging (DCA) for long-term accumulation
+- Arbitrage detection and execution between exchanges
+- Portfolio rebalancing strategies with customizable thresholds
+- Sentiment-based trading algorithms leveraging news and social media data
+- Support for custom strategy creation using strategy builder interface
 
 ### 4.3 Real-Time Charts & Visualization
 - TradingView Lightweight Charts integration
@@ -55,11 +63,16 @@ Create an all-in-one solution for crypto traders that combines powerful automate
 - Risk management settings
 
 ### 4.6 AI Integration
-- Market sentiment analysis from news sources
-- Anomaly detection in price movements
-- Trading opportunity suggestions
-- Risk assessment
-- AI agent with tool calling capabilities
+- Market sentiment analysis from news sources with confidence scoring
+- NLP processing of financial news with entity recognition and impact assessment
+- Pattern recognition for technical chart formations with success probability metrics
+- Anomaly detection in price movements with real-time alerts
+- Predictive analytics for potential market movements based on historical patterns
+- Trading opportunity suggestions with risk/reward assessment
+- Risk assessment with portfolio exposure analysis
+- AI agent with tool calling capabilities for automated decision-making
+- Custom strategy recommendation based on user's risk profile and trading history
+- Market regime detection (trending, ranging, volatile) with appropriate strategy suggestions
 
 ### 4.7 Notifications & Alerts
 - Real-time trade execution notifications
@@ -163,4 +176,92 @@ Create an all-in-one solution for crypto traders that combines powerful automate
 - TradingView Lightweight Charts documentation
 - shadcn UI component library
 - NextJS v15 documentation
-- Supabase authentication and database documentation 
+- Supabase authentication and database documentation
+
+## 10. Security Framework
+
+### 10.1 API Key Management
+- End-to-end encryption for API key storage using AES-256
+- Keys stored in isolated secure environment with limited access
+- Key rotation policies and enforcement
+- Zero plain-text storage of sensitive credentials
+- Secure key sharing between system components
+
+### 10.2 Authentication & Authorization
+- Multi-factor authentication requirement for all account operations
+- Biometric authentication support where available
+- Role-based access control with principle of least privilege
+- Session management with automatic timeouts
+- IP whitelisting for API access and trading operations
+- Device fingerprinting for suspicious activity detection
+
+### 10.3 Infrastructure Security
+- Regular penetration testing schedule
+- DDoS protection implementation
+- Rate limiting and throttling to prevent abuse
+- Real-time security monitoring and alerting
+- Vulnerability scanning with remediation SLAs
+
+### 10.4 Data Protection
+- Encryption of data at rest and in transit
+- Regular security audits and compliance checks
+- Secure development lifecycle implementation
+- Privacy by design architecture
+- Data minimization and retention policies
+
+## 11. Regulatory Compliance
+
+### 11.1 KYC/AML Integration
+- Identity verification process for account creation
+- Transaction monitoring for suspicious activities
+- Compliance with local KYC/AML regulations
+- Sanctions screening implementation
+- Automated suspicious activity reporting
+
+### 11.2 Data Protection
+- GDPR compliance for European users
+- CCPA compliance for California residents
+- Data subject access request fulfillment process
+- Privacy policy and terms of service documentation
+- Data portability and right to be forgotten implementation
+
+### 11.3 Trading Compliance
+- Record keeping of all trading activities
+- Regulatory reporting capabilities for relevant jurisdictions
+- Timestamp integrity for audit trails
+- Trade reconstruction capabilities
+- Market manipulation detection systems
+
+### 11.4 Jurisdiction Management
+- Geo-fencing for restricted jurisdictions
+- Feature availability based on regulatory requirements
+- Customizable compliance rule engine
+- Regular regulatory updates and adaptation
+- Legal opinion documentation for supported features
+
+## 12. Monetization Strategy
+
+### 12.1 Subscription Tiers
+- **Free Tier**: Basic features, limited exchanges, delayed data
+- **Standard Tier** ($19.99/month): Multiple exchanges, real-time data, basic strategies
+- **Professional Tier** ($49.99/month): All exchanges, advanced strategies, AI insights
+- **Enterprise Tier** (Custom pricing): Custom features, dedicated support, API access
+
+### 12.2 Transaction-Based Revenue
+- Success fee model (1-5% of profits, no fee on losses)
+- Volume-based discounts for high-frequency traders
+- Referral program with revenue sharing
+
+### 12.3 Premium Features
+- Strategy marketplace with revenue sharing for creators
+- Priority access to new features and strategies
+- Enhanced backtesting capabilities
+- Advanced AI insights and recommendations
+- Custom strategy development services
+
+### 12.4 Ecosystem Expansion
+- API access for third-party developers
+- White-label solutions for brokers and institutions
+- Data analytics package for institutional clients
+- Educational content and trading courses
+- Partnership opportunities with exchanges and service providers 
